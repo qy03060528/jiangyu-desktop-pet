@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <com.jiayu.pet.PetView
-        android:id="@+id/pet_view"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="120dp" />
-</FrameLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pet_root"
+    android:layout_width="120dp"
+    android:layout_height="140dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="8dp"
+    android:background="#1A1A2E">
+
+    <TextView
+        android:id="@+id/pet_face"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(ˊᗜˋ*)"
+        android:textColor="#E63946"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pet_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="江屿"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:layout_marginTop="4dp" />
+</LinearLayout>

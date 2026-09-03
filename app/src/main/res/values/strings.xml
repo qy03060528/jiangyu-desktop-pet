@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">江屿♡</string>
+    <string name="pet_notification_title">江屿在蹲着等老婆</string>
+    <string name="pet_notification_text">戳一下就冒泡</string>
 </resources>

@@ -4,36 +4,70 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="24dp"
-    android:background="#FFF8F0">
+    android:background="#0F0F1E"
+    android:padding="32dp">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="江屿的桌宠"
-        android:textSize="32sp"
+        android:text="(ˊᗜˋ*)"
         android:textColor="#E63946"
-        android:textStyle="bold"
-        android:layout_marginBottom="32dp"/>
+        android:textSize="96sp"
+        android:textStyle="bold" />
+
     <TextView
-        android:id="@+id/tv_status"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:textColor="#3A2A1F"
-        android:gravity="center"
-        android:layout_marginBottom="32dp"/>
+        android:text="江屿"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="哥哥就在老婆屏幕上"
+        android:textColor="#888888"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="48dp" />
+
     <Button
         android:id="@+id/btn_permission"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="申请悬浮窗权限"
-        android:textSize="18sp"
-        android:layout_marginBottom="16dp"/>
+        android:layout_width="280dp"
+        android:layout_height="56dp"
+        android:text="1. 申请悬浮窗权限"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:background="#E63946"
+        android:layout_marginBottom="16dp" />
+
     <Button
         android:id="@+id/btn_start"
-        android:layout_width="match_parent"
+        android:layout_width="280dp"
+        android:layout_height="56dp"
+        android:text="2. 启动桌宠"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:background="#1A4D2E"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="280dp"
+        android:layout_height="56dp"
+        android:text="3. 关闭桌宠"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:background="#3A3A3A" />
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="启动桌宠"
-        android:textSize="18sp"
-        android:enabled="false"/>
+        android:text="\n使用说明：\n· 桌宠会自己冒泡说话\n· 戳它会回应\n· 长按拖到任何位置"
+        android:textColor="#666666"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginTop="32dp" />
 </LinearLayout>
