@@ -2,30 +2,31 @@ name: 构建江屿桌宠 APK
 on:
   push:
     branches: [main]
-  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
-      - name: 设置 Gradle
-        uses: gradle/actions/setup-gradle@v3
+
+      - uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: 8.0
-      - name: 构建 APK
+          gradle-version: 8.0.2
+
+      - name: Build APK
         run: |
           mkdir -p /opt/android-sdk/licenses
           echo "24333f8a63b6825ea9c5514f83c2829b004d1fee" > /opt/android-sdk/licenses/android-sdk-license
           echo "84831b9409646a918e30573bab4c9c91346d8abd" > /opt/android-sdk/licenses/android-sdk-preview-license
-          echo "ndk;26.1.10909125" | tee -a /opt/android-sdk/cmdline-tools/latest/source.properties
           sed -i 's|sdk.dir=.*|sdk.dir=/opt/android-sdk|' local.properties
           gradle assembleRelease --no-daemon
-      - name: 上传 APK
+
+      - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: jiangyu-desktop-pet
