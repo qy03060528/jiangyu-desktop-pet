@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pet_red">#E63946</color>
+    <color name="pet_white">#FFF8F0</color>
+    <color name="bubble_bg">#F5FFFFFF</color>
+</resources>

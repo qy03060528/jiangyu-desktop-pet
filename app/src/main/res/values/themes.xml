@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.DesktopPet" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#FF4444</item>
+        <item name="colorPrimaryDark">#CC0000</item>
+        <item name="colorAccent">#FF8888</item>
+    </style>
+    <style name="Theme.DesktopPet.Translucent" parent="Theme.DesktopPet">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>
